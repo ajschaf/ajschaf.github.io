@@ -1,2 +1,1 @@
-# ajschaf.github.io
-Site
+# Site
