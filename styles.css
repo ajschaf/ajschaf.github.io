@@ -1,0 +1,20 @@
+/** Content **/
+.grid-container {
+	margin: 4% 2% 0 2%; 
+	display: grid;
+	grid-template-columns: 24% 24% 24% 24%;
+	grid-column-gap: 1%;
+	grid-template-rows: repeat(4, 150px);
+	grid-row-gap: 10px;
+}
+.top-text {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+@font-face {
+    font-family: "Space Grotesk Medium";
+    src: url("fonts/awesome-font-medium.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
