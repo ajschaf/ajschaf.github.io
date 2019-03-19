@@ -3,23 +3,42 @@ body {
 background-color: #C1C6C8;
 }
 .grid-container {
-	margin: 0% 2% 0 2%; 
+	margin: 2% 2% 0 4%; 
 	display: grid;
-	grid-template-columns: 8% 42% 42% 8%;
+	grid-template-columns: 10% 30% 10% 32%;
 	grid-column-gap: 1%;
+	grid-template-rows: repeat (4,150px);
+	grid-row-gap: 10px;
 }
 .maintext {
-	grid-column-start: 0;
-	grid-column-end: 4;
 	padding-right: 10%;
 	font-size: 22px;
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+img {
+	width: 100%;
+	height: auto;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .tophead {
 	font-size: 52px;
-	padding-left: 8%;
 	font-family: 'Space Grotesk Medium', Helvetica, Arial, sans-serif;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
+
+.captiontext {
+	font-size: 16px;
+	font-family: 'Manrope Medium', Helvetica, Arial, sans-serif;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+}
+
+
 .maintext {
 	font-family: "Manrope Medium", Helvetica, Arial, sans-serif;
 }
@@ -38,4 +57,26 @@ hr {
     font-family: "Manrope Medium";
 	src: url('webfont/manrope-medium.woff2') format('woff2'), 
     url('webfont/manrope-medium.woff') format('woff');
+}
+@media screen and (max-width: 800px) {
+  img {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    grid-column-start: 1;
+	grid-column-end: 5;
+  }
+  .maintext {
+  	grid-column-start: 1;
+	grid-column-end: 5;
+  	grid-row-start: 2 ;
+    grid-row-end: 4 ;
+  }
+  .maintext br {display: none;
+  }
+  .captiontext {
+  	grid-column-start: 1;
+	grid-column-end: 5;
+  	grid-row-start: 5 ;
+    grid-row-end: 6 ;
+
+  }
 }
