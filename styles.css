@@ -1,20 +1,41 @@
 /** Content **/
-.grid-container {
-	margin: 4% 2% 0 2%; 
-	display: grid;
-	grid-template-columns: 24% 24% 24% 24%;
-	grid-column-gap: 1%;
-	grid-template-rows: repeat(4, 150px);
-	grid-row-gap: 10px;
+body {
+background-color: #C1C6C8;
 }
-.top-text {
-	grid-column-start: 3;
+.grid-container {
+	margin: 0% 2% 0 2%; 
+	display: grid;
+	grid-template-columns: 8% 42% 42% 8%;
+	grid-column-gap: 1%;
+}
+.maintext {
+	grid-column-start: 0;
 	grid-column-end: 4;
+	padding-right: 10%;
+	font-size: 22px;
+}
+
+.tophead {
+	font-size: 52px;
+	padding-left: 8%;
+	font-family: 'Space Grotesk Medium', Helvetica, Arial, sans-serif;
+}
+.maintext {
+	font-family: "Manrope Medium", Helvetica, Arial, sans-serif;
+}
+
+hr {
+	border: 1px solid black;
 }
 
 @font-face {
     font-family: "Space Grotesk Medium";
-    src: url("fonts/awesome-font-medium.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
+	src: url('webfont/SpaceGrotesk-Medium.woff2') format('woff2'), 
+    url('webfont/SpaceGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Manrope Medium";
+	src: url('webfont/manrope-medium.woff2') format('woff2'), 
+    url('webfont/manrope-medium.woff') format('woff');
 }
