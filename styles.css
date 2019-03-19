@@ -1,20 +1,22 @@
 /** Content **/
 body {
-background-color: #C1C6C8;
+	background-color: #C1C6C8;
 }
 .grid-container {
-	margin: 2% 2% 0 4%; 
+	margin: 0 2% 0 4%; 
 	display: grid;
 	grid-template-columns: 10% 30% 10% 32%;
 	grid-column-gap: 1%;
-	grid-template-rows: repeat (4,150px);
-	grid-row-gap: 10px;
+	grid-template-rows: repeat(8,100px);
+	grid-row-gap: 5px;
 }
 .maintext {
 	padding-right: 10%;
 	font-size: 22px;
 	grid-column-start: 4;
-	grid-column-end: 5;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 5;
 }
 img {
 	width: 100%;
@@ -24,10 +26,12 @@ img {
 }
 
 .tophead {
-	font-size: 52px;
-	font-family: 'Space Grotesk Medium', Helvetica, Arial, sans-serif;
+	font-size: 33px;
+	font-family: 'Manrope Medium', Helvetica, Arial, sans-serif;
 	grid-column-start: 1;
 	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
 }
 
 .captiontext {
@@ -35,9 +39,9 @@ img {
 	font-family: 'Manrope Medium', Helvetica, Arial, sans-serif;
 	grid-column-start: 1;
 	grid-column-end: 3;
-	grid-row-start: 3;
+	grid-row-start: 8;
+	grid-row-end: 9;
 }
-
 
 .maintext {
 	font-family: "Manrope Medium", Helvetica, Arial, sans-serif;
@@ -48,35 +52,44 @@ hr {
 }
 
 @font-face {
-    font-family: "Space Grotesk Medium";
+font-family: "Space Grotesk Medium";
 	src: url('webfont/SpaceGrotesk-Medium.woff2') format('woff2'), 
-    url('webfont/SpaceGrotesk-Medium.woff') format('woff');
+url('webfont/SpaceGrotesk-Medium.woff') format('woff');
 }
 
 @font-face {
-    font-family: "Manrope Medium";
+font-family: "Manrope Medium";
 	src: url('webfont/manrope-medium.woff2') format('woff2'), 
-    url('webfont/manrope-medium.woff') format('woff');
+url('webfont/manrope-medium.woff') format('woff');
 }
-@media screen and (max-width: 800px) {
-  img {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    grid-column-start: 1;
-	grid-column-end: 5;
-  }
-  .maintext {
-  	grid-column-start: 1;
-	grid-column-end: 5;
-  	grid-row-start: 2 ;
-    grid-row-end: 4 ;
-  }
-  .maintext br {display: none;
-  }
-  .captiontext {
-  	grid-column-start: 1;
-	grid-column-end: 5;
-  	grid-row-start: 5 ;
-    grid-row-end: 6 ;
 
-  }
+@media screen and (max-width: 800px) {
+img {
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 5;	
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+.maintext {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+.tophead {
+	grid-column-start: 1;
+	grid-column-end: 5;	
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+.maintext br {
+	display: none;
+}
+.captiontext {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 9;
+	grid-row-end: 10;
+}
 }
