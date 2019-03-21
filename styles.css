@@ -7,7 +7,7 @@ body {
 	display: grid;
 	grid-template-columns: 10% 30% 10% 32%;
 	grid-column-gap: 1%;
-	grid-template-rows: repeat(8,100px);
+	grid-template-rows: repeat(9,100px);
 	grid-row-gap: 5px;
 }
 .maintext {
@@ -72,8 +72,8 @@ img {
 	width: 100%;
 	grid-column-start: 1;
 	grid-column-end: 5;	
-	grid-row-start: 5;
-	grid-row-end: 7;
+	grid-row-start: 6;
+	grid-row-end: 8;
 }
 .maintext {
 	grid-column-start: 1;
@@ -88,13 +88,7 @@ img {
 	grid-row-end: 10;
 }
 }
-
-@media only screen 
-    and (width : 375px) 
-    and (height : 635px)
-    and (orientation : portrait)  
-    and (-webkit-device-pixel-ratio : 3) { 
-{
+@media only screen and (width : 375px) and (height : 635px) and (orientation : portrait) {
 .tophead {
 	grid-column-start: 1;
 	grid-column-end: 5;	
@@ -117,7 +111,7 @@ img {
 .captiontext {
 	grid-column-start: 1;
 	grid-column-end: 5;
-	grid-row-start: 9;
-	grid-row-end: 10;
+	grid-row-start: 11;
+	grid-row-end: 12;
 }
-    }
+}
