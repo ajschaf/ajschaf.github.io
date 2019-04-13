@@ -7,7 +7,6 @@ body {
 	display: grid;
 	grid-template-columns: 10% 30% 10% 32%;
 	grid-column-gap: 1%;
-	grid-template-rows: repeat(9,100px);
 	grid-row-gap: 5px;
 }
 .maintext {
