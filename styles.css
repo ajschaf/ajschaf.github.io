@@ -14,6 +14,17 @@ body {
 }
 }
 
+@media only screen and (min-device-width: 100px) and (max-device-height: 450px) {
+body {
+  margin: 10% 10% 10% 10%;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 13px;
+  margin: 10% 10% 10% 10%;
+  line-height: 16px;
+  color: black;
+}
+}
+
 h1 {
 	font-family: 'Helvetica', sans-serif;
 }
