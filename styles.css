@@ -8,13 +8,13 @@ body {
    line-height: 26px;
    color: black;
 }
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 body {
 	margin: 10% 10% 10% 10%;
 }
 }
 
-@media only screen and (min-device-width: 100px) and (max-device-height: 450px) {
+@media screen and (max-width: 450px) {
 body {
   margin: 10% 10% 10% 10%;
   font-family: 'Helvetica', sans-serif;
@@ -48,3 +48,4 @@ a:hover {
   background-size: auto 6px;
   background-repeat: repeat-x;
   text-decoration: none;
+}
