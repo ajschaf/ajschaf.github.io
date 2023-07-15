@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "TASA";
+  src: url("webfont/TASAOrbiterVF.woff2") format('woff2');
+}
+
 body {
 	background-color: white;
 }
 body {
-   font-family: 'Helvetica', sans-serif;
+   font-family: 'TASA', sans-serif;
    font-size: 21px;
    margin: 5% 20% 10% 25%;
    line-height: 26px;
