@@ -2,4 +2,3 @@ User-agent: *
 Disallow: /
 
 Allow: /index.html
-Allow: /work.html
